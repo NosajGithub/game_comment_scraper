@@ -34,7 +34,7 @@ def output_comments():
     """
     comments = []
     
-    submission = r.get_submission(submission_id=sub_id, comment_sort='new')
+    submission = r.get_submission(submission_id=sub_id, comment_sort='new', comment_limit = 200)
     flat_comments = praw.helpers.flatten_tree(submission.comments)
     
     for comment in flat_comments:
