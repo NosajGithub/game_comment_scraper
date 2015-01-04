@@ -6,9 +6,9 @@ Allows redditors to follow a thread for a game in real time. Perfect for NFL, ML
 The script loads in the top 200 comments for the given submission sorted by new, and displays the top 5 with the highest scores.
 Pressing 'Enter' loads and shows the comments again, excluding any comments that have been shown before.  
 
-Usage:  
+Usage:   
 game_comment_scraper.py sub_id  
 sub_id = the id of the submission whose comments you want to follow  
 
-Example:
+Example:  
 python game_comment_scraper.py 2r95sg
