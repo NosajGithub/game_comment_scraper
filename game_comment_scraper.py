@@ -5,7 +5,7 @@ import praw, time, os, sys
 
 sub_id = sys.argv[1]
 
-user_agent = ("Game comment scraper 1.0 by /u/NosajReddit" "github.com/NosajGithub/")
+user_agent = ("Game comment scraper 1.0 by /u/NosajReddit" "https://github.com/NosajGithub/game_comment_scraper")
 r = praw.Reddit(user_agent=user_agent)
 
 clear = lambda: os.system('clear')
