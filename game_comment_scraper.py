@@ -21,6 +21,8 @@ def format_time(sec_ago):
     """
     if sec_ago < 60:
         return "less than a minute ago"
+    elif sec_ago < 120:
+        return "1 minute ago"
     elif sec_ago < 3600: #less than 1 hour ago
         return time.strftime("%-M minutes ago", time.gmtime(sec_ago))
     else:
