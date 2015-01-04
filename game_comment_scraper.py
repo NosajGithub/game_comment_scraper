@@ -34,4 +34,4 @@ input_text = ""
 while input_text != "Exit":
     clear()
     output_comments()
-    input_text = raw_input("Press \"Enter\" to get more comments, \"Exit\" to exit...")    
+    input_text = raw_input("Press \"Enter\" to get more comments, type \"Exit\" to exit...")    
