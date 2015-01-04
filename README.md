@@ -13,3 +13,6 @@ sub_id = the id of the submission whose comments you want to follow
 Example:  
 For the reddit thread at http://www.reddit.com/r/nfl/comments/2r95sg/game_thread_baltimore_ravens_106_at_pittsburgh/  
 python game_comment_scraper.py 2r95sg
+
+Video of it in use here:  
+https://www.youtube.com/watch?v=4Q_zCWlof0Y  
