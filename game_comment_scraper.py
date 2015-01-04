@@ -7,9 +7,13 @@ sub_id = sys.argv[1]
 
 user_agent = ("Game comment scraper 1.0 by /u/NosajReddit" "https://github.com/NosajGithub/game_comment_scraper")
 r = praw.Reddit(user_agent=user_agent)
-
-clear = lambda: os.system('cls' if os.name == 'nt' else 'clear')
 cached_comments = []
+
+def clear(): 
+    """
+    Clear the screen, for after enter is pressed
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
 
 def format_time(sec_ago):
     """
@@ -18,12 +22,14 @@ def format_time(sec_ago):
     if sec_ago < 60:
         return "less than a minute ago"
     elif sec_ago < 3600: #less than 1 hour ago
-        return time.strftime("%M minutes ago", time.gmtime(sec_ago))
+        return time.strftime("%-M minutes ago", time.gmtime(sec_ago))
     else:
-        return time.strftime("%H hours ago", time.gmtime(sec_ago))
+        return time.strftime("%-H hours ago", time.gmtime(sec_ago))
 
 def output_comments():
-
+    """
+    Show a set of new comments for the submission
+    """
     comments = []
     
     submission = r.get_submission(submission_id=sub_id, comment_sort='new')
