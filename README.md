@@ -1,7 +1,7 @@
 game_comment_scraper
 ====================
 
-Allows redditors to follow a thread for a game in real time. Perfect for NFL, MLB, NBA, and MLB games - or any thread with a lot of new comments flooding in, really.    
+Allows redditors to follow a thread for a game in real time. Perfect for NFL, MLB, NBA, and NHL games - or any thread with a lot of new comments flooding in, really.    
 
 The script loads in the top 200 comments for the given submission sorted by new, and displays the top 5 with the highest scores.
 Pressing 'Enter' loads and shows the comments again, excluding any comments that have been shown before.  
